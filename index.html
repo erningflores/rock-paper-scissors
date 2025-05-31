@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="container">
+    
+    <div class="section1">
+    <div class="human-area">
+        <h2>Human Choice</h2>
+        <form class="form1">
+            <label for="human-choice">Human choice: </label>
+            <select id="human-choice">
+                <option value="">Choose here: </option>
+                <option value="rock">Rock</option>
+                <option value="paper">Paper</option>
+                <option value="scissor">Scissor</option>
+            </select>
+        </form>
+        <div>
+            <h3 class="score">Score</h3>
+            <p id="human-score"></p>
+        </div>
+    </div>
+
+    <div class="computer-area">
+        <h2>Computer Choice</h2>
+        <form class="form2">
+            <label for="comp-choice">Computer choice</label>
+            <input id="comp-choice" type="text" readonly>
+            <input id="comp-submit" type="submit" value="Computer Submit">
+        </form>
+        <div>
+            <h3 class="score">Score</h3>
+            <p id="computer-score"></p>
+        </div>
+    </div>
+    </div>
+
+    <div class="section2">
+        <button id="go">Go</button>
+        <div class="output"></div>
+        <div id="reserve-for-reset"></div>
+    </div>
+    </div>
+</body>
+</html>
