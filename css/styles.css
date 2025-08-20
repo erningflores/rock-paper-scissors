@@ -58,3 +58,21 @@ select, input, button{
     justify-content: center;
     align-items: center;
 }
+
+.container-display{
+    background-color: blue;
+    color: white;
+    width: 67vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container-display > h1{
+    font-size: 120px;
+}
+.container-display > h2{
+    font-size: 80px;
+}

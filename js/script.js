@@ -117,6 +117,7 @@ function playRound(humanChoice, computerChoice){
 //console.log(`human score: ${humanScore}`);
 //console.log(`computer score: ${computerScore}`);
 
+
 const output = document.querySelector(".output");
 const goButton = document.querySelector("#go");
 //write the logic to play the entire game
@@ -138,13 +139,16 @@ function goButtonClick(event){
 }
 
 //ending the game
+const containerDisplay = document.querySelector('.container-display');
 function endGame(){
         if(humanScore > computerScore){
             output.textContent = `Human Wins! ${humanScore} vs ${computerScore}`;
+            containerDisplay.innerHTML = `<h1>🏆 ${computerScore}<h1><h2>🧑 🥇<h2>`;
         }else if(humanScore === computerScore){
             output.textContent = `It is a tie!!! ${humanScore} vs ${computerScore}`;
         }else {
             output.textContent = "Computer Wins!";
+            containerDisplay.innerHTML = `<h1>🏆 ${humanScore} <h1><h2>🖥️ 🥇<h2>`
         }
         console.log("!!!GAME OVER!!!");
         goButton.disabled = true;
